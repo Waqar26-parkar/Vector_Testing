@@ -16,7 +16,7 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import io.github.bonigarcia.wdm.WebDriverManager;
  
-public class BasicExtentReportClass {
+public class Projectextentreports {
  
     ExtentSparkReporter htmlReporter;
     ExtentReports reports;

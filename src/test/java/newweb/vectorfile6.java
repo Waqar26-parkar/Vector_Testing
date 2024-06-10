@@ -1,7 +1,6 @@
+
+
 package newweb;
-
-
-
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertFalse;
@@ -240,7 +239,7 @@ public void updateQuantitiesForMultipleItems() {
                               "Repeat steps 2-4 for multiple items in the cart.");
 
     try {
-        int numberOfItems;
+        int numberOfItems = 0;
 		// Repeat the quantity update process for multiple items
         for (int i = 1; i <= numberOfItems; i++) {
             // Locate item
@@ -283,7 +282,7 @@ public void verifyCartDisplaysUpdatedQuantitiesAndTotalPrice() {
                               "Verify that the cart displays the updated quantities and total price accurately.");
 
     try {
-        int numberOfItems;
+        int numberOfItems =0;
 		// Verify if quantities and total price are updated correctly
         for (int i = 1; i <= numberOfItems; i++) {
             // Verify item quantity
@@ -318,12 +317,18 @@ public void proceedToCheckoutWithUpdatedQuantities() {
         // Click on proceed to checkout button
         WebElement proceedToCheckoutButton = driver.findElement(By.id("PROCEED_TO_CHECKOUT_BUTTON")); // Replace with actual ID
         proceedToCheckoutButton.click();
-        int numberOfItems;
+        int numberOfItems=0;
         // Verify quantities in checkout process
-        for (int i = 1; i <= numberOfItems; i++) {
+        for (int i = 1; i <= numberOfItems; i++) 
+        {
             // Verify item quantity in checkout
             WebElement checkoutQuantity = driver.findElement(By.xpath("//div[@class='checkout-item'"));
-
+        }
+    }
+        finally {
+        	
+        }
+    }
 
             @Test
             public void viewItemsInShoppingCart() {

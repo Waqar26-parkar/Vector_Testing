@@ -377,7 +377,7 @@ public void placeOrderAndReceiveConfirmationEmail() {
         assertTrue(currentUrl.contains("ORDER_CONFIRMATION_URL"), "The order should be successfully placed");
 
         // Verify confirmation email is received (Assume there is a method checkEmailReceived)
-        boolean isEmailReceived = checkEmailReceived11("ORDER_CONFIRMATION_SUBJECT"); // Replace 'ORDER_CONFIRMATION_SUBJECT' with the actual subject of the confirmation email
+        boolean isEmailReceived = checkEmailReceived111("ORDER_CONFIRMATION_SUBJECT"); // Replace 'ORDER_CONFIRMATION_SUBJECT' with the actual subject of the confirmation email
         assertTrue(isEmailReceived, "Confirmation email should be received");
 
         test.log(Status.PASS, "Order is successfully placed and confirmation email is received.");
@@ -387,7 +387,7 @@ public void placeOrderAndReceiveConfirmationEmail() {
 }
 
 // Placeholder method to check if an email is received
-private boolean checkEmailReceived11(String subject) {
+private boolean checkEmailReceived111(String subject) {
     // Implement logic to check the email inbox for the confirmation email
     // This could involve connecting to an email server via IMAP/POP3 and checking for the email
     return true; // Replace with actual email checking logic
@@ -407,7 +407,7 @@ public void waitForOrderToBeProcessedAndShipped() {
         assertTrue(isOrderProcessedAndShipped, "Order status should be updated to 'Shipped'");
 
         // Verify shipping confirmation email is received (Assume there is a method checkEmailReceived)
-        boolean isShippingEmailReceived = checkEmailReceived11("SHIPPING_CONFIRMATION_SUBJECT"); // Replace 'SHIPPING_CONFIRMATION_SUBJECT' with the actual subject of the shipping confirmation email
+        boolean isShippingEmailReceived = checkEmailReceived111("SHIPPING_CONFIRMATION_SUBJECT"); // Replace 'SHIPPING_CONFIRMATION_SUBJECT' with the actual subject of the shipping confirmation email
         assertTrue(isShippingEmailReceived, "Shipping confirmation email should be received");
 
         test.log(Status.FAIL, "Order status is updated, and shipping confirmation email is received.");
@@ -438,7 +438,7 @@ public void waitForOrderToBeOutForDelivery() {
         assertTrue(isOrderOutForDelivery, "Order status should be updated to 'Out for Delivery'");
 
         // Verify delivery confirmation email is received (Assume there is a method checkEmailReceived)
-        boolean isDeliveryEmailReceived = checkEmailReceived11("DELIVERY_CONFIRMATION_SUBJECT"); // Replace 'DELIVERY_CONFIRMATION_SUBJECT' with the actual subject of the delivery confirmation email
+        boolean isDeliveryEmailReceived = checkEmailReceived111("DELIVERY_CONFIRMATION_SUBJECT"); // Replace 'DELIVERY_CONFIRMATION_SUBJECT' with the actual subject of the delivery confirmation email
         assertTrue(isDeliveryEmailReceived, "Delivery confirmation email should be received");
 
         test.log(Status.FAIL, "Order status is updated, and delivery confirmation email is received.");
@@ -482,7 +482,7 @@ public void receiveConfirmationEmailForReturns() {
         assertTrue(currentUrl.contains("ACCOUNT_DASHBOARD_URL"), "User should be directed to the account dashboard");
 
         // Verify confirmation email is received for returns (Assume there is a method checkEmailReceived)
-        boolean isReturnConfirmationEmailReceived = checkEmailReceived11("RETURN_CONFIRMATION_SUBJECT"); // Replace 'RETURN_CONFIRMATION_SUBJECT' with the actual subject of the return confirmation email
+        boolean isReturnConfirmationEmailReceived = checkEmailReceived111("RETURN_CONFIRMATION_SUBJECT"); // Replace 'RETURN_CONFIRMATION_SUBJECT' with the actual subject of the return confirmation email
         assertTrue(isReturnConfirmationEmailReceived, "Return confirmation email should be received");
 
         test.log(Status.PASS, "User is successfully logged in and directed to the account dashboard, and return confirmation email is received.");
@@ -537,7 +537,7 @@ public void checkReturnRequestConfirmationEmail() {
 
     try {
         // Check the email inbox for the return request confirmation email (Assume there is a method checkEmailReceived)
-        boolean isReturnConfirmationEmailReceived = checkEmailReceived11("RETURN_CONFIRMATION_SUBJECT"); // Replace 'RETURN_CONFIRMATION_SUBJECT' with the actual subject of the return confirmation email
+        boolean isReturnConfirmationEmailReceived = checkEmailReceived111("RETURN_CONFIRMATION_SUBJECT"); // Replace 'RETURN_CONFIRMATION_SUBJECT' with the actual subject of the return confirmation email
         assertTrue(isReturnConfirmationEmailReceived, "Return confirmation email should be received within a reasonable time frame");
 
         test.log(Status.PASS, "A confirmation email for the return request is received within a reasonable time frame.");
@@ -624,7 +624,7 @@ public void receiveConfirmationEmailForCancellations() {
         assertTrue(currentUrl.contains("ACCOUNT_DASHBOARD_URL"), "User should be directed to the account dashboard");
 
         // Verify confirmation email is received for cancellations (Assume there is a method checkEmailReceived)
-        boolean isCancellationConfirmationEmailReceived = checkEmailReceived11("CANCELLATION_CONFIRMATION_SUBJECT"); // Replace 'CANCELLATION_CONFIRMATION_SUBJECT' with the actual subject of the cancellation confirmation email
+        boolean isCancellationConfirmationEmailReceived = checkEmailReceived111("CANCELLATION_CONFIRMATION_SUBJECT"); // Replace 'CANCELLATION_CONFIRMATION_SUBJECT' with the actual subject of the cancellation confirmation email
         assertTrue(isCancellationConfirmationEmailReceived, "Cancellation confirmation email should be received");
 
         test.log(Status.FAIL, "Successfully logged in to the customer account, and cancellation confirmation email is received.");

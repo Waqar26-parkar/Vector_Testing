@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="19" passed="17" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-07T16:04:50 IST" name="Default suite" finished-at="2024-06-07T16:05:20 IST" duration-ms="29884">
+    <groups>
+    </groups>
+    <test started-at="2024-06-07T16:04:50 IST" name="Default test" finished-at="2024-06-07T16:05:20 IST" duration-ms="29884">
+      <class name="newweb.vectorfile2">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:04:50 IST" name="startReport" finished-at="2024-06-07T16:04:51 IST" duration-ms="210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:04:51 IST" name="setup" finished-at="2024-06-07T16:04:53 IST" duration-ms="1853" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="accessHelpCenterFromAnyPage()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:04:53 IST" name="accessHelpCenterFromAnyPage" finished-at="2024-06-07T16:04:53 IST" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accessHelpCenterFromAnyPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:04:53 IST" name="tearDown" finished-at="2024-06-07T16:04:53 IST" duration-ms="255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:04:53 IST" name="setup" finished-at="2024-06-07T16:04:54 IST" duration-ms="1151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="accessHelpCenterPage()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:04:54 IST" name="accessHelpCenterPage" finished-at="2024-06-07T16:04:54 IST" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accessHelpCenterPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:04:54 IST" name="tearDown" finished-at="2024-06-07T16:04:54 IST" duration-ms="214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:04:54 IST" name="setup" finished-at="2024-06-07T16:04:55 IST" duration-ms="1084" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="cancelUnshippedOrder()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:04:55 IST" name="cancelUnshippedOrder" finished-at="2024-06-07T16:04:55 IST" duration-ms="32" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[There should be at least one unshipped order expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: There should be at least one unshipped order expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertFalse(Assert.java:67)
+at newweb.vectorfile2.cancelUnshippedOrder(vectorfile2.java:702)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cancelUnshippedOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:04:55 IST" name="tearDown" finished-at="2024-06-07T16:04:56 IST" duration-ms="217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:04:56 IST" name="setup" finished-at="2024-06-07T16:04:57 IST" duration-ms="1290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkHelpCenterLinkInFooter()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:04:57 IST" name="checkHelpCenterLinkInFooter" finished-at="2024-06-07T16:04:57 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkHelpCenterLinkInFooter -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:04:57 IST" name="tearDown" finished-at="2024-06-07T16:04:57 IST" duration-ms="229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:04:57 IST" name="setup" finished-at="2024-06-07T16:04:58 IST" duration-ms="1254" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkHelpCenterLinkInHeader()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:04:58 IST" name="checkHelpCenterLinkInHeader" finished-at="2024-06-07T16:04:58 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkHelpCenterLinkInHeader -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:04:58 IST" name="tearDown" finished-at="2024-06-07T16:04:59 IST" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:04:59 IST" name="setup" finished-at="2024-06-07T16:05:00 IST" duration-ms="1238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkReturnRequestConfirmationEmail()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:00 IST" name="checkReturnRequestConfirmationEmail" finished-at="2024-06-07T16:05:00 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkReturnRequestConfirmationEmail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:00 IST" name="tearDown" finished-at="2024-06-07T16:05:00 IST" duration-ms="214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:00 IST" name="setup" finished-at="2024-06-07T16:05:01 IST" duration-ms="1261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="initiateReturnRequest()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:01 IST" name="initiateReturnRequest" finished-at="2024-06-07T16:05:01 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateReturnRequest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:01 IST" name="tearDown" finished-at="2024-06-07T16:05:02 IST" duration-ms="262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:02 IST" name="setup" finished-at="2024-06-07T16:05:03 IST" duration-ms="1128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="locateFooterSection()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:03 IST" name="locateFooterSection" finished-at="2024-06-07T16:05:03 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- locateFooterSection -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:03 IST" name="tearDown" finished-at="2024-06-07T16:05:03 IST" duration-ms="359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:03 IST" name="setup" finished-at="2024-06-07T16:05:04 IST" duration-ms="1262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="locateHelpCenterLink()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:04 IST" name="locateHelpCenterLink" finished-at="2024-06-07T16:05:04 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- locateHelpCenterLink -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:04 IST" name="tearDown" finished-at="2024-06-07T16:05:05 IST" duration-ms="215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:05 IST" name="setup" finished-at="2024-06-07T16:05:06 IST" duration-ms="1277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="navigateToHeaderSection()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:06 IST" name="navigateToHeaderSection" finished-at="2024-06-07T16:05:06 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToHeaderSection -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:06 IST" name="tearDown" finished-at="2024-06-07T16:05:06 IST" duration-ms="232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:06 IST" name="setup" finished-at="2024-06-07T16:05:07 IST" duration-ms="1303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="navigateToOrderHistory()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:07 IST" name="navigateToOrderHistory" finished-at="2024-06-07T16:05:07 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToOrderHistory -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:07 IST" name="tearDown" finished-at="2024-06-07T16:05:08 IST" duration-ms="225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:08 IST" name="setup" finished-at="2024-06-07T16:05:09 IST" duration-ms="1277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="placeOrderAndReceiveConfirmationEmail()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:09 IST" name="placeOrderAndReceiveConfirmationEmail" finished-at="2024-06-07T16:05:09 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeOrderAndReceiveConfirmationEmail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:09 IST" name="tearDown" finished-at="2024-06-07T16:05:09 IST" duration-ms="298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:09 IST" name="setup" finished-at="2024-06-07T16:05:10 IST" duration-ms="1280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="receiveConfirmationEmailForCancellations()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:10 IST" name="receiveConfirmationEmailForCancellations" finished-at="2024-06-07T16:05:10 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- receiveConfirmationEmailForCancellations -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:10 IST" name="tearDown" finished-at="2024-06-07T16:05:11 IST" duration-ms="356" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:11 IST" name="setup" finished-at="2024-06-07T16:05:12 IST" duration-ms="1210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="receiveConfirmationEmailForReturns()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:12 IST" name="receiveConfirmationEmailForReturns" finished-at="2024-06-07T16:05:12 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- receiveConfirmationEmailForReturns -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:12 IST" name="tearDown" finished-at="2024-06-07T16:05:12 IST" duration-ms="236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:12 IST" name="setup" finished-at="2024-06-07T16:05:13 IST" duration-ms="1213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="reviewReturnConfirmationEmailContent()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:13 IST" name="reviewReturnConfirmationEmailContent" finished-at="2024-06-07T16:05:13 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The email should contain detailed next steps for the return process expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The email should contain detailed next steps for the return process expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at newweb.vectorfile2.reviewReturnConfirmationEmailContent(vectorfile2.java:571)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reviewReturnConfirmationEmailContent -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:14 IST" name="tearDown" finished-at="2024-06-07T16:05:14 IST" duration-ms="241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:14 IST" name="setup" finished-at="2024-06-07T16:05:15 IST" duration-ms="1309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyHelpCenterContent()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:15 IST" name="verifyHelpCenterContent" finished-at="2024-06-07T16:05:15 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHelpCenterContent -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:15 IST" name="tearDown" finished-at="2024-06-07T16:05:15 IST" duration-ms="206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:15 IST" name="setup" finished-at="2024-06-07T16:05:17 IST" duration-ms="1251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyHelpCenterContentSections()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:17 IST" name="verifyHelpCenterContentSections" finished-at="2024-06-07T16:05:17 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHelpCenterContentSections -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:17 IST" name="tearDown" finished-at="2024-06-07T16:05:17 IST" duration-ms="275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:17 IST" name="setup" finished-at="2024-06-07T16:05:18 IST" duration-ms="1306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="waitForOrderToBeOutForDelivery()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:18 IST" name="waitForOrderToBeOutForDelivery" finished-at="2024-06-07T16:05:18 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waitForOrderToBeOutForDelivery -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:18 IST" name="tearDown" finished-at="2024-06-07T16:05:18 IST" duration-ms="218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:18 IST" name="setup" finished-at="2024-06-07T16:05:20 IST" duration-ms="1372" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="waitForOrderToBeProcessedAndShipped()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:20 IST" name="waitForOrderToBeProcessedAndShipped" finished-at="2024-06-07T16:05:20 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waitForOrderToBeProcessedAndShipped -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:20 IST" name="tearDown" finished-at="2024-06-07T16:05:20 IST" duration-ms="419" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:newweb.vectorfile2@242b836]" started-at="2024-06-07T16:05:20 IST" name="endReport" finished-at="2024-06-07T16:05:20 IST" duration-ms="244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- newweb.vectorfile2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
